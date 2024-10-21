@@ -5,7 +5,7 @@ import ApiResponse from "../utils/ApiResponse.js";
 
 const options = {
   httpOnly: true,
-  secure: true,
+  // secure: true,
   sameSite: 'lax',  
   path: '/',
 };
