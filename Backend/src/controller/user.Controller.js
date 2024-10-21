@@ -6,6 +6,8 @@ import ApiResponse from "../utils/ApiResponse.js";
 const options = {
   httpOnly: true,
   secure: true,
+  sameSite: 'lax',  
+  path: '/',
 };
 
 const generateAccessTokenWithID = async (userId) => {
