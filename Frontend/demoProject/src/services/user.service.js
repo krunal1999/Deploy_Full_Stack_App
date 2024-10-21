@@ -3,6 +3,9 @@ import config from "../config/config";
 
 const axiosInstance = axios.create({
   withCredentials: true,
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
 
 class AuthenticationService {
@@ -18,7 +21,6 @@ class AuthenticationService {
   fetchUserDetails() {
     return axiosInstance.get(`${config.serverUrl}/user/`);
   }
-  
 }
 
 const authenticationService = new AuthenticationService();
