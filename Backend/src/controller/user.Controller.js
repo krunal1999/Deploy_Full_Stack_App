@@ -4,7 +4,7 @@ import ApiError from "../utils/ApiError.js";
 import ApiResponse from "../utils/ApiResponse.js";
 
 const options = {
-  httpOnly: false,
+  httpOnly: true,
   secure: true,
 };
 

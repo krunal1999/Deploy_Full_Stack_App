@@ -16,7 +16,8 @@ const LandingPage = () => {
     }
   }, [user]);
 
-  // console.log(user)
+  console.log(user)
+  console.log(isAuthenticated)
 
   return (
     

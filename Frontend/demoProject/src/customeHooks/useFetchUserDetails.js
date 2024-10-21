@@ -21,6 +21,7 @@ const useFetchUserDetails = () => {
   const fetchUserDetails = async () => {
     try {
       const response = await authenticationService.fetchUserDetails();
+      console.log(response.data.data)
       dispatch(setUser(response.data.data));
     } catch (error) {
       console.log(error);
