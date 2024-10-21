@@ -8,7 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: process.env.CORS_ORIGIN,
+    origin: "https://deploy-full-stack-app.vercel.app",
     methods: ["POST" , "GET"],
     credentials: true,
     allowedHeaders: ["Content-Type", "Authorization"], 
@@ -18,13 +18,13 @@ app.use(
 app.use(
   express.urlencoded({
     extended: true,
-    limit: "16kb",
+    limit: "80kb",
   })
 );
 
 app.use(
   express.json({
-    limit: "16kb",
+    limit: "80kb",
   })
 );
 

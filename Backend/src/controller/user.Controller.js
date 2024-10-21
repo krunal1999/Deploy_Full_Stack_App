@@ -7,7 +7,7 @@ const options = {
   httpOnly: true,
   secure: true,
   sameSite: 'None', // Important for cross-origin
-  domain: 'deploy-full-stack-app.vercel.app', // Ensure this matches your frontend
+  
 };
 
 // res.cookie('accessToken', token, {
