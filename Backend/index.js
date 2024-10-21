@@ -1,14 +1,12 @@
 import dotenv from "dotenv";
-import connectDatabase from "./database/index.js";
-import app from "./app.js";
+import connectDatabase from "./src/database/index.js";
+import app from "./src/app.js";
 
 dotenv.config({
-  path: "./env",
+  path: ".env",
 });
 
-app.get("/", (req, res) => {
-  res.send("hello server");
-});
+
 
 connectDatabase()
   .then((response) => {
