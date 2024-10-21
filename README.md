@@ -2,6 +2,8 @@
 
 ## Description
 This is a full-stack web application built with [React](https://reactjs.org/) for the frontend and [Node.js](https://nodejs.org/) with [Express](https://expressjs.com/) for the backend. The application integrates with MongoDB for data storage.
+Deployed on verecel
+https://deploy-full-stack-app.vercel.app/ 
 
 ## Getting Started
 
